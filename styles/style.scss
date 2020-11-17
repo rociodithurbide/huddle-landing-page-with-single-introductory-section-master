@@ -32,38 +32,44 @@ body {
         max-width: 9.375rem;
       }
     }
-
-    .illustrationHeader {
-      width: 100%;
-    }
-
-    .title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      text-align: center;
-      margin: 2rem 0 1.5rem;
-    }
-    .descripton {
-      text-align: center;
-      font-size: 1.1rem;
-      line-height: 1.8rem;
-      margin-bottom: 2rem;
-    }
-    .registerButton {
-      display: block;
-      margin: 0 auto 3rem;
-      text-align: center;
-      padding: 1rem 5rem;
-      border: 0;
-      border-radius: 5rem;
-      outline: 0;
-      color: $violet;
+    .wrapper {
+      .illustrationHeader {
+        width: 100%;
+      }
+      .contentWrapper {
+        .title {
+          font-size: 1.6rem;
+          font-weight: 700;
+          text-align: center;
+          margin: 2rem 0 1.5rem;
+          line-height: 2rem;
+        }
+        .descripton {
+          text-align: center;
+          font-size: 1.1rem;
+          line-height: 1.8rem;
+          margin-bottom: 2rem;
+        }
+        .registerButton {
+          display: block;
+          margin: 0 auto 3rem;
+          text-align: center;
+          padding: 1rem 5rem;
+          border: 0;
+          border-radius: 5rem;
+          outline: 0;
+          color: $violet;
+          font-size: 1rem;
+        }
+      }
     }
   }
+
   .footer {
     text-align: center;
     .attribution {
       font-size: 0.8rem;
+      line-height: 1.2rem;
       a {
         color: $white;
       }

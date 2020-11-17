@@ -29,25 +29,26 @@ body .container .logoLink .logoImg {
   max-width: 9.375rem;
 }
 
-body .container .illustrationHeader {
+body .container .wrapper .illustrationHeader {
   width: 100%;
 }
 
-body .container .title {
+body .container .wrapper .contentWrapper .title {
   font-size: 1.6rem;
   font-weight: 700;
   text-align: center;
   margin: 2rem 0 1.5rem;
+  line-height: 2rem;
 }
 
-body .container .descripton {
+body .container .wrapper .contentWrapper .descripton {
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.8rem;
   margin-bottom: 2rem;
 }
 
-body .container .registerButton {
+body .container .wrapper .contentWrapper .registerButton {
   display: block;
   margin: 0 auto 3rem;
   text-align: center;
@@ -56,6 +57,7 @@ body .container .registerButton {
   border-radius: 5rem;
   outline: 0;
   color: #674baf;
+  font-size: 1rem;
 }
 
 body .footer {
@@ -64,6 +66,7 @@ body .footer {
 
 body .footer .attribution {
   font-size: 0.8rem;
+  line-height: 1.2rem;
 }
 
 body .footer .attribution a {
