@@ -2,6 +2,47 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+//Breakpoints
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
 // Colors
 // Primary
 $violet: hsl(257, 40%, 49%);
@@ -13,13 +54,27 @@ $white: #eee8fd;
 
 body {
   font-family: "Open Sans", sans-serif;
-  max-width: 375px;
+  min-width: 375px;
+  max-width: 576px;
   height: 100vh;
   background-image: url(../images/bg-mobile.svg);
   background-color: $violet;
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
+
+  @include sm {
+    max-width: 768px;
+  }
+
+  @include md {
+    max-width: 992px;
+    margin: 0 auto;
+    background-image: url(../images/bg-desktop.svg);
+  }
+  @include lg {
+    max-width: 1200px;
+  }
 
   .container {
     margin: 2rem;
@@ -33,22 +88,37 @@ body {
       }
     }
     .wrapper {
+      @include lg {
+        display: flex;
+        align-items: center;
+      }
       .illustrationHeader {
         width: 100%;
       }
       .contentWrapper {
+        @include lg {
+          padding-left: 4rem;
+        }
         .title {
           font-size: 1.6rem;
           font-weight: 700;
           text-align: center;
           margin: 2rem 0 1.5rem;
           line-height: 2rem;
+
+          @include lg {
+            text-align: left;
+          }
         }
         .descripton {
           text-align: center;
           font-size: 1.1rem;
           line-height: 1.8rem;
           margin-bottom: 2rem;
+
+          @include lg {
+            text-align: left;
+          }
         }
         .registerButton {
           display: block;
@@ -60,6 +130,10 @@ body {
           outline: 0;
           color: $violet;
           font-size: 1rem;
+
+          @include lg {
+            margin: 0;
+          }
         }
       }
     }

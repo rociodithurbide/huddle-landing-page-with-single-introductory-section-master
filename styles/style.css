@@ -7,13 +7,34 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  max-width: 375px;
+  min-width: 375px;
+  max-width: 576px;
   height: 100vh;
   background-image: url(../images/bg-mobile.svg);
   background-color: #674baf;
   background-repeat: no-repeat;
   background-size: cover;
   color: #eee8fd;
+}
+
+@media (min-width: 576px) {
+  body {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 992px;
+    margin: 0 auto;
+    background-image: url(../images/bg-desktop.svg);
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    max-width: 1200px;
+  }
 }
 
 body .container {
@@ -29,8 +50,25 @@ body .container .logoLink .logoImg {
   max-width: 9.375rem;
 }
 
+@media (min-width: 992px) {
+  body .container .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 body .container .wrapper .illustrationHeader {
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  body .container .wrapper .contentWrapper {
+    padding-left: 4rem;
+  }
 }
 
 body .container .wrapper .contentWrapper .title {
@@ -41,11 +79,23 @@ body .container .wrapper .contentWrapper .title {
   line-height: 2rem;
 }
 
+@media (min-width: 992px) {
+  body .container .wrapper .contentWrapper .title {
+    text-align: left;
+  }
+}
+
 body .container .wrapper .contentWrapper .descripton {
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.8rem;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  body .container .wrapper .contentWrapper .descripton {
+    text-align: left;
+  }
 }
 
 body .container .wrapper .contentWrapper .registerButton {
@@ -58,6 +108,12 @@ body .container .wrapper .contentWrapper .registerButton {
   outline: 0;
   color: #674baf;
   font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  body .container .wrapper .contentWrapper .registerButton {
+    margin: 0;
+  }
 }
 
 body .footer {
