@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+// Colors
+// Primary
+$violet: hsl(257, 40%, 49%);
+$white: #eee8fd;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 375px;
+  height: 100vh;
+  background-image: url(../images/bg-mobile.svg);
+  background-color: $violet;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+
+  .container {
+    margin: 2rem;
+
+    .logoLink {
+      display: inline-block;
+      margin-bottom: 2rem;
+
+      .logoImg {
+        max-width: 9.375rem;
+      }
+    }
+
+    .illustrationHeader {
+      width: 100%;
+    }
+
+    .title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 2rem 0 1.5rem;
+    }
+    .descripton {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    .registerButton {
+      display: block;
+      margin: 0 auto 3rem;
+      text-align: center;
+      padding: 1rem 5rem;
+      border: 0;
+      border-radius: 5rem;
+      outline: 0;
+      color: $violet;
+    }
+  }
+  .footer {
+    text-align: center;
+    .attribution {
+      font-size: 0.8rem;
+      a {
+        color: $white;
+      }
+    }
+  }
+}

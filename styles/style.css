@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 375px;
+  height: 100vh;
+  background-image: url(../images/bg-mobile.svg);
+  background-color: #674baf;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #eee8fd;
+}
+
+body .container {
+  margin: 2rem;
+}
+
+body .container .logoLink {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+body .container .logoLink .logoImg {
+  max-width: 9.375rem;
+}
+
+body .container .illustrationHeader {
+  width: 100%;
+}
+
+body .container .title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+}
+
+body .container .descripton {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+body .container .registerButton {
+  display: block;
+  margin: 0 auto 3rem;
+  text-align: center;
+  padding: 1rem 5rem;
+  border: 0;
+  border-radius: 5rem;
+  outline: 0;
+  color: #674baf;
+}
+
+body .footer {
+  text-align: center;
+}
+
+body .footer .attribution {
+  font-size: 0.8rem;
+}
+
+body .footer .attribution a {
+  color: #eee8fd;
+}
+/*# sourceMappingURL=style.css.map */
