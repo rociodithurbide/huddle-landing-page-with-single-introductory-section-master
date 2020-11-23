@@ -38,16 +38,22 @@ body {
 }
 
 body .container {
-  margin: 2rem;
+  margin: 0 2rem;
 }
 
 body .container .logoLink {
   display: inline-block;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 body .container .logoLink .logoImg {
   max-width: 9.375rem;
+}
+
+@media (min-width: 768px) {
+  body .container .wrapper {
+    margin: 0 2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -58,11 +64,18 @@ body .container .logoLink .logoImg {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 2rem;
   }
 }
 
 body .container .wrapper .illustrationHeader {
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  body .container .wrapper .illustrationHeader {
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -118,6 +131,12 @@ body .container .wrapper .contentWrapper .registerButton {
 
 body .footer {
   text-align: center;
+}
+
+@media (min-width: 992px) {
+  body .footer {
+    margin: 2rem 0;
+  }
 }
 
 body .footer .attribution {

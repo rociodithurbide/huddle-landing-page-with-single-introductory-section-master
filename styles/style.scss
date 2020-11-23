@@ -77,23 +77,29 @@ body {
   }
 
   .container {
-    margin: 2rem;
-
+    margin: 0 2rem;
     .logoLink {
       display: inline-block;
-      margin-bottom: 2rem;
+      margin: 2rem 0;
 
       .logoImg {
         max-width: 9.375rem;
       }
     }
     .wrapper {
+      @include md {
+        margin: 0 2rem;
+      }
       @include lg {
         display: flex;
         align-items: center;
+        margin: 0 2rem;
       }
       .illustrationHeader {
         width: 100%;
+        @include lg {
+          max-width: 50%;
+        }
       }
       .contentWrapper {
         @include lg {
@@ -141,6 +147,9 @@ body {
 
   .footer {
     text-align: center;
+    @include lg {
+      margin: 2rem 0;
+    }
     .attribution {
       font-size: 0.8rem;
       line-height: 1.2rem;
